@@ -933,236 +933,25 @@
         ><span></span><span></span><span></span><span></span>
       </div>
     </div>
-    <script data-optimized="1" type="text/javascript">
-      const lazyloadRunObserver = () => {
-        const lazyloadBackgrounds = document.querySelectorAll(
-          `.e-con.e-parent:not(.e-lazyloaded)`
-        );
-        const lazyloadBackgroundObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                let lazyloadBackground = entry.target;
-                if (lazyloadBackground) {
-                  lazyloadBackground.classList.add("e-lazyloaded");
-                }
-                lazyloadBackgroundObserver.unobserve(entry.target);
-              }
-            });
-          },
-          { rootMargin: "200px 0px 200px 0px" }
-        );
-        lazyloadBackgrounds.forEach((lazyloadBackground) => {
-          lazyloadBackgroundObserver.observe(lazyloadBackground);
-        });
-      };
-      const events = ["DOMContentLoaded", "elementor/lazyload/observe"];
-      events.forEach((event) => {
-        document.addEventListener(event, lazyloadRunObserver);
-      });
-    </script>
     <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/e84b8f9176271464c7f2c71ac56c027a.js?ver=4fae0"
-      id="cute-alert-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/cc5b63a848cf26b6f4963597ec6d6b6b.js?ver=5d1f1"
-      id="htm-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/e15f0f20120e9afeb2723f9209db07a4.js?ver=d33b0"
-      id="react-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/4abd53979d93b620e9702ee1acf59985.js?ver=611aa"
-      id="react-dom-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/1cd78f500d0d193df6288179c98e53ca.js?ver=23039"
-      id="wp-escape-html-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/cc4b5e38069e5737e7d9cf6b5a5b3ac1.js?ver=e291d"
-      id="wp-element-js"
-    ></script>
-    <script data-optimized="1" id="metform-app-js-extra">
-      var mf = {
-        postType: "page",
-        restURI:
-          "https:\/\/wp.webtend.net\/noxfolio\/wp-json\/metform\/v1\/forms\/views\/",
-        minMsg1: "Minimum length should be ",
-        Msg2: " character long.",
-        maxMsg1: "Maximum length should be ",
-        maxNum: "Maximum number should be ",
-        minNum: "Minimum number should be ",
-      };
-    </script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/37294a49c8fe214146fafe9a41fa5156.js?ver=2aa90"
-      id="metform-app-js"
-    ></script>
-    <script data-optimized="1" id="noxfolio-theme-js-extra">
-      var noxfolioLocalize = {
-        ajax_url:
-          "https:\/\/wp.webtend.net\/noxfolio\/wp-admin\/admin-ajax.php",
-        is_rtl: "",
-      };
-    </script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/cff9c455285a15a3993605ee7c898ced.js?ver=00a0a"
-      id="noxfolio-theme-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/99fd946b995e14006eedd833c3646dcb.js?ver=85b41"
-      id="font-awesome-4-shim-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/b4aa7f8de3988282658a21da9c79e736.js?ver=7c975"
-      id="elementor-webpack-runtime-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/d177d027cd316cd5be17597929719544.js?ver=91148"
-      id="elementor-frontend-modules-js"
-    ></script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/b859805d8bc587ec5408992118c9172e.js?ver=a2d39"
-      id="jquery-ui-core-js"
-    ></script>
-    <script data-optimized="1" id="elementor-frontend-js-before">
-      var elementorFrontendConfig = {
-        environmentMode: { edit: !1, wpPreview: !1, isScriptDebug: !1 },
-        i18n: {
-          shareOnFacebook: "Share on Facebook",
-          shareOnTwitter: "Share on Twitter",
-          pinIt: "Pin it",
-          download: "Download",
-          downloadImage: "Download image",
-          fullscreen: "Fullscreen",
-          zoom: "Zoom",
-          share: "Share",
-          playVideo: "Play Video",
-          previous: "Previous",
-          next: "Next",
-          close: "Close",
-          a11yCarouselWrapperAriaLabel:
-            "Carousel | Horizontal scrolling: Arrow Left & Right",
-          a11yCarouselPrevSlideMessage: "Previous slide",
-          a11yCarouselNextSlideMessage: "Next slide",
-          a11yCarouselFirstSlideMessage: "This is the first slide",
-          a11yCarouselLastSlideMessage: "This is the last slide",
-          a11yCarouselPaginationBulletMessage: "Go to slide",
-        },
-        is_rtl: !1,
-        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
-        responsive: {
-          breakpoints: {
-            mobile: {
-              label: "Mobile Portrait",
-              value: 767,
-              default_value: 767,
-              direction: "max",
-              is_enabled: !0,
-            },
-            mobile_extra: {
-              label: "Mobile Landscape",
-              value: 880,
-              default_value: 880,
-              direction: "max",
-              is_enabled: !1,
-            },
-            tablet: {
-              label: "Tablet Portrait",
-              value: 1024,
-              default_value: 1024,
-              direction: "max",
-              is_enabled: !0,
-            },
-            tablet_extra: {
-              label: "Tablet Landscape",
-              value: 1200,
-              default_value: 1200,
-              direction: "max",
-              is_enabled: !0,
-            },
-            laptop: {
-              label: "Laptop",
-              value: 1366,
-              default_value: 1366,
-              direction: "max",
-              is_enabled: !0,
-            },
-            widescreen: {
-              label: "Widescreen",
-              value: 2400,
-              default_value: 2400,
-              direction: "min",
-              is_enabled: !1,
-            },
-          },
-        },
-        version: "3.24.3",
-        is_static: !1,
-        experimentalFeatures: {
-          additional_custom_breakpoints: !0,
-          container: !0,
-          container_grid: !0,
-          e_swiper_latest: !0,
-          e_nested_atomic_repeaters: !0,
-          e_onboarding: !0,
-          home_screen: !0,
-          "ai-layout": !0,
-          "landing-pages": !0,
-          "nested-elements": !0,
-          "link-in-bio": !0,
-          "floating-buttons": !0,
-        },
-        urls: {
-          assets:
-            "https:\/\/wp.webtend.net\/noxfolio\/wp-content\/plugins\/elementor\/assets\/",
-          ajaxurl:
-            "https:\/\/wp.webtend.net\/noxfolio\/wp-admin\/admin-ajax.php",
-        },
-        nonces: { floatingButtonsClickTracking: "c16387bd8e" },
-        swiperClass: "swiper",
-        settings: { page: [], editorPreferences: [] },
-        kit: {
-          active_breakpoints: [
-            "viewport_mobile",
-            "viewport_tablet",
-            "viewport_tablet_extra",
-            "viewport_laptop",
-          ],
-          lightbox_enable_counter: "yes",
-          lightbox_enable_fullscreen: "yes",
-          lightbox_enable_zoom: "yes",
-          lightbox_enable_share: "yes",
-          lightbox_title_src: "title",
-          lightbox_description_src: "description",
-        },
-        post: {
-          id: 30,
-          title: "Contact%20%E2%80%93%20Noxfolio",
-          excerpt: "",
-          featuredImage: !1,
-        },
-      };
-    </script>
-    <script
-      data-optimized="1"
-      src="https://wp.webtend.net/noxfolio/wp-content/litespeed/js/d427c201b83e2e10f1feef5541ae9de1.js?ver=15c77"
-      id="elementor-frontend-js"
-    ></script>
+    data-optimized="1"
+    src="./scrpits/s003.js"
+    id="noxfolio-theme-js"
+  ></script>
+
+  <script
+    data-optimized="1"
+    src="./scrpits/s002.js"
+    id="elementor-webpack-runtime-js"
+  ></script>
+  
+  <script
+    data-optimized="1"
+    src="./scrpits/s004.js"
+    id="elementor-frontend-modules-js"
+  ></script>
+ 
+  <script src="./scrpits/s001.js" data-optimized="1" id="elementor-frontend-js-before"></script>
+  <script data-optimized="1" src="./scrpits/index.js" ></script>
   </body>
 </html>
